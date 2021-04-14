@@ -1,0 +1,13 @@
+<h2>Don't contact us!</h2>
+
+<form action="/contact_us" method="GET">
+  <input type="text" name="name">
+  <input type="text" name="address">
+  <input type="submit" value="Search">
+</form>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
